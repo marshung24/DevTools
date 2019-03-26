@@ -1,0 +1,19 @@
+{
+    "name": "marsapp/devtools",
+    "description": "Dev Tools",
+    "homepage": "https://github.com/marshung24/DevTools",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mars Hung",
+            "email": "tfaredxj@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "marsapp\\dev\\tools\\": "src" }
+    },
+    "minimum-stability": "stable",
+    "require": {
+    }
+}
