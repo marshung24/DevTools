@@ -33,19 +33,20 @@ class DevTools
     /**
      * Check if the two objects are the same
      * 
-     * @param mixed $obj1
-     * @param mixed $obj2
+     * @param mixed $data
+     * @param mixed $hope
      * @param bool $detail Show Detail(default false)
      * @return boolean
      */
-    public static function theSame($obj1, $obj2, $detail = false)
+    public static function theSame($data, $hope, $detail = false)
     {
         if ($detail) {
-            echo '$obj1 = '.var_export($obj1, 1)."\n";
-            echo '$obj2 = '.var_export($obj2, 1)."\n";
+            echo '$data = '.var_export($data, 1)."\n";
+            echo '$hope = '.var_export($hope, 1)."\n";
+            echo "\n";
         }
         
-        return json_encode($obj1) == json_encode($obj2);
+        return json_encode($data) == json_encode($hope);
     }
     
     /**
